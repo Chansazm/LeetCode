@@ -13,7 +13,8 @@ def checkTarget(arr, target):
         else:
             left += 1
         
-    return 
+    return False
+checkTarget([1, 2, 4, 6, 8, 9, 14, 15], 13) #--> true
        
 
 
