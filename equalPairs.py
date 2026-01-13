@@ -1,11 +1,15 @@
+from collections import defaultdict
 def equalPairs(grid):
-    def convertTuple(grid):
-        return tuple(grid)
-    rows = {}
+    dic = defaultdict(int)
+    
     for row in grid:
-        row = convertTuple(row)
-        grid[row] += 1
-    return rows
+        dic[tuple(row)] += 1
+    
+    ans = 0   
+    for c in zip(*grid):
+        ans += dic[c]
+    return ans
+        
 
 grid = [[3,2,1],[1,7,6],[2,7,7]]
 print(equalPairs(grid))#--->3

@@ -15,6 +15,7 @@ def findBestSubArray(arr, k):
 
 
 
+
 array = [3,-1,4,12,-8,5,6]
 k = 4
 ans = findBestSubArray(array, k)
