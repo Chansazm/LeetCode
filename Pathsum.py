@@ -18,4 +18,14 @@ class Solution:
             
             return left or right
         return dfs(root, 0)
-            
+        
+root = PathSum(0)
+root.left = PathSum(1)
+root.left.left = PathSum(3)
+root.left.right = PathSum(4)
+root.right = PathSum(2)
+root.right.right = PathSum(5)
+root.right.right.right = PathSum(6)
+
+solution = Solution()
+print(solution.pathSum(root, 22))
