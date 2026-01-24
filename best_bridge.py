@@ -7,7 +7,7 @@ def best_bridge(grid):
             potential_island = traverse(grid, r, c, set())
             if len(potential_island) > 0:
                 main_island = potential_island
-                break
+                
     
     visited = set(main_island)
     queue = deque([])
